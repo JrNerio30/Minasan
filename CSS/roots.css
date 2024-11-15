@@ -1,0 +1,15 @@
+:root{
+  --color_primary: #C75B4D;
+}
+
+@keyframes reveal-card1 {
+  to {
+    transform: translateX(2rem) translateY(2rem) rotate(-10deg);
+  }
+}
+
+@keyframes reveal-card2 {
+  to {
+    transform: translateX(-2rem) translateY(2rem) rotate(10deg);
+  }
+}
