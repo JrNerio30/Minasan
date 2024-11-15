@@ -21,12 +21,18 @@
     <nav>
       <a href="#" class="logo">Minasan</a>
       <aside>
+        <a href="#home">Home</a>
         <a href="#about">About</a>
-        <a href="#">Recipes <i class="fa-solid fa-angle-down"></i></a>
+        <button id="recipesMenu">Recipes <i class="fa-solid fa-angle-down"></i></button>
+        <div id="recipeLinks" class="recipe-menus">
+          <a href="#spaghettiCarbonara">Spaghetti Carbonara</a>
+          <a href="#iSSS">Italian Sausage Spaghetti Squash</a>
+          <a href="#veganMushroomRagout">Vegan Mushroom Ragout</a>
+        </div>
       </aside>
     </nav>
 
-    <header>
+    <header id="home">
       <section>
         <h1>Minasan's Recipes</h1>
         <p>At Minasan, everyone’s recipe has a place at the table. Share your flavors, share your story.</p>
@@ -40,7 +46,7 @@
     </header>
     
     <main id="about">
-      <h2>Minasan</h2>
+      <h2>About Minasan</h2>
       <p>
         Minasan is a community-driven space where everyone is invited to share their favorite recipes.
         Whether it’s a family tradition, a culinary experiment, or a dish from your travels, 
@@ -52,16 +58,24 @@
 
     <section id="recipes" class="recipes">
       <h2>Recipes</h2>
-      <div class="recipe-cards">
+      <p class="top3">Discover 3 of the most loved recipes shared by our community.</p>
+
+      <!-- SPAGHETTI CARBONARA -->
+      <div id="spaghettiCarbonara" class="recipe-cards">
         <img id="spaghettiCarbonaraImg" src="" alt="">
         <section class="about-recipe">
-          <h3 id="spaghettiCarbonaraName"></h3>
+          <div class="name-likes-wrapper">
+            <h3 id="spaghettiCarbonaraName"></h3>
+            <p id="spaghettiCarbonaraLikes"></p>
+          </div>
 
           <p class="description" id="spaghettiCarbonaraDescription"></p>
 
           <p id="spaghettiCarbonaraCuisine"></p>
 
           <p id="spaghettiCarbonaraDifficulty"></p>
+
+          <p id="spaghettiCarbonaraServings"></p>
 
           <section class="recipe-time-wrapper">
             <h4>Recipe Time</h4>
@@ -74,19 +88,19 @@
 
           <section class="ingredients-wrapper">
             <h4>Ingredients</h4>
-            <ul id="recipeIngredients">
+            <ul id="spaghettiCarbonaraIngredients">
             </ul>
           </section>
 
           <section class="instructions-wrapper">
             <h4>Instructions</h4>
-            <ul id="recipeInstructions">
+            <ul id="spaghettiCarbonaraInstructions">
             </ul>
           </section>
 
           <section class="nutrition-wrapper">
             <h4>Nutrition</h4>
-            <ul id="recipeNutrition">
+            <ul>
               <li id="spaghettiCarbonaraCalories"></li>
               <li id="spaghettiCarbonaraProtein"></li>
               <li id="spaghettiCarbonaraCarbs"></li>
@@ -94,9 +108,114 @@
             </ul>
           </section>
 
+          <p class="tags" id="spaghettiCarbonaraTags"></p>
         </section>
       </div>
-      
+
+      <!-- ITALIAN SAUSAGE SPAGHETTI SQUASH -->
+      <div id="iSSS" class="recipe-cards">
+        <img id="iSSSImg" src="" alt="">
+        <section class="about-recipe">
+          <div class="name-likes-wrapper">
+            <h3 id="iSSSName"></h3>
+            <p id="iSSSLikes"></p>
+          </div>
+
+          <p class="description" id="iSSSDescription"></p>
+
+          <p id="iSSSCuisine"></p>
+
+          <p id="iSSSDifficulty"></p>
+
+          <p id="iSSSServings"></p>
+
+          <section class="recipe-time-wrapper">
+            <h4>Recipe Time</h4>
+            <ul>
+              <li><p id="iSSSPrep"></p></li>
+              <li><p id="iSSSCook"></p></li>
+              <li><p id="iSSSTotal"></p></li>
+            </ul>
+          </section>
+
+          <section class="ingredients-wrapper">
+            <h4>Ingredients</h4>
+            <ul id="iSSSIngredients">
+            </ul>
+          </section>
+
+          <section class="instructions-wrapper">
+            <h4>Instructions</h4>
+            <ul id="iSSSInstructions">
+            </ul>
+          </section>
+
+          <section class="nutrition-wrapper">
+            <h4>Nutrition</h4>
+            <ul>
+              <li id="iSSSCalories"></li>
+              <li id="iSSSProtein"></li>
+              <li id="iSSSCarbs"></li>
+              <li id="iSSSFat"></li>
+            </ul>
+          </section>
+
+          <p class="tags" id="iSSSTags"></p>
+        </section>
+      </div>
+
+      <!-- VEGAN MUSHROOM RAGU -->
+      <div id="veganMushroomRagout" class="recipe-cards">
+        <img id="veganMushroomRagoutImg" src="" alt="">
+        <section class="about-recipe">
+          <div class="name-likes-wrapper">
+            <h3 id="veganMushroomRagoutName"></h3>
+            <p id="veganMushroomRagoutLikes"></p>
+          </div>
+
+          <p class="description" id="veganMushroomRagoutDescription"></p>
+
+          <p id="veganMushroomRagoutCuisine"></p>
+
+          <p id="veganMushroomRagoutDifficulty"></p>
+
+          <p id="veganMushroomRagoutServings"></p>
+
+          <section class="recipe-time-wrapper">
+            <h4>Recipe Time</h4>
+            <ul>
+              <li><p id="veganMushroomRagoutPrep"></p></li>
+              <li><p id="veganMushroomRagoutCook"></p></li>
+              <li><p id="veganMushroomRagoutTotal"></p></li>
+            </ul>
+          </section>
+
+          <section class="ingredients-wrapper">
+            <h4>Ingredients</h4>
+            <ul id="veganMushroomRagoutIngredients">
+            </ul>
+          </section>
+
+          <section class="instructions-wrapper">
+            <h4>Instructions</h4>
+            <ul id="veganMushroomRagoutInstructions">
+            </ul>
+          </section>
+
+          <section class="nutrition-wrapper">
+            <h4>Nutrition</h4>
+            <ul>
+              <li id="veganMushroomRagoutCalories"></li>
+              <li id="veganMushroomRagoutProtein"></li>
+              <li id="veganMushroomRagoutCarbs"></li>
+              <li id="veganMushroomRagoutFat"></li>
+            </ul>
+          </section>
+
+          <p class="tags" id="veganMushroomRagoutTags"></p>
+        </section>
+      </div>
+
     </section>
   </body>
 </html>
