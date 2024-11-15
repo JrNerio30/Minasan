@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html{
+  scroll-behavior: smooth;
+}
+
+h1, h2{
+  font-family: "Imperial Script";
+}
+
+h2{
+  font-size: clamp(3rem, 8vw, 8.375rem);
+  color: var(--color_primary);
+  font-weight: 400;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-inline: 1rem;
+}
+
+p, button, a{
+  font-family: "EB Garamond";
+}
+
+nav{
+  position: fixed;
+  width: 100%;
+  height: 8vh;
+  padding-inline: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 3;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 120vh;
+  gap: 8.5rem;
+  margin-bottom: 5rem;
+}
+
+header section{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+
+header figure{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+main{
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+section.recipes{
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+section.recipes div{
+  display: flex;
+  flex-direction: column;
+}
