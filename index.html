@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Minasan</title>
+    <meta name="description" content="Three recpies that is great for dinne with family">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="./CSS/roots.css">
+    <link rel="stylesheet" href="./CSS/global.css">
+    <link rel="stylesheet" href="./CSS/mediaquery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Imperial+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/879ba98a23.js" crossorigin="anonymous"></script>
+    <script src="./JS/recipes.js" defer></script>
+    <script src="./JS/base.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <a href="#" class="logo">Minasan</a>
+      <aside>
+        <a href="#about">About</a>
+        <a href="#">Recipes <i class="fa-solid fa-angle-down"></i></a>
+      </aside>
+    </nav>
+
+    <header>
+      <section>
+        <h1>Minasan's Recipes</h1>
+        <p>At Minasan, everyone’s recipe has a place at the table. Share your flavors, share your story.</p>
+        <a href="#recipes">Explore</a>
+      </section>
+      <figure>
+        <img src="./assets/Italian_Sausage_Spaghetti_Squash.webp" alt="Italian Sausage Spaghetti Squash on a black bowl.">
+        <img src="./assets/Spaghetti_Carbonara.webp" alt="Spaghetti Carbonara on black bowl with a tomato on top.">
+        <img src="./assets/Vegan_Mushroom_Ragu.webp" alt="Vegan Mushroom Ragu on red bowl that is surrounded with different ingredients.">
+      </figure>
+    </header>
+    
+    <main id="about">
+      <h2>Minasan</h2>
+      <p>
+        Minasan is a community-driven space where everyone is invited to share their favorite recipes.
+        Whether it’s a family tradition, a culinary experiment, or a dish from your travels, 
+        we believe every recipe has a story worth telling. Here, we celebrate the joy of cooking together 
+        and the connections that food creates, welcoming all to contribute their unique flavors and experiences.
+      </p>
+      <button>Share Your Recipe <i class="fa-solid fa-plus"></i></button>
+    </main>
+
+    <section id="recipes" class="recipes">
+      <h2>Recipes</h2>
+      <div class="recipe-cards">
+        <img id="spaghettiCarbonaraImg" src="" alt="">
+        <section class="about-recipe">
+          <h3 id="spaghettiCarbonaraName"></h3>
+
+          <p class="description" id="spaghettiCarbonaraDescription"></p>
+
+          <p id="spaghettiCarbonaraCuisine"></p>
+
+          <p id="spaghettiCarbonaraDifficulty"></p>
+
+          <section class="recipe-time-wrapper">
+            <h4>Recipe Time</h4>
+            <ul>
+              <li><p id="spaghettiCarbonaraPrep"></p></li>
+              <li><p id="spaghettiCarbonaraCook"></p></li>
+              <li><p id="spaghettiCarbonaraTotal"></p></li>
+            </ul>
+          </section>
+
+          <section class="ingredients-wrapper">
+            <h4>Ingredients</h4>
+            <ul id="recipeIngredients">
+            </ul>
+          </section>
+
+          <section class="instructions-wrapper">
+            <h4>Instructions</h4>
+            <ul id="recipeInstructions">
+            </ul>
+          </section>
+
+          <section class="nutrition-wrapper">
+            <h4>Nutrition</h4>
+            <ul id="recipeNutrition">
+              <li id="spaghettiCarbonaraCalories"></li>
+              <li id="spaghettiCarbonaraProtein"></li>
+              <li id="spaghettiCarbonaraCarbs"></li>
+              <li id="spaghettiCarbonaraFat"></li>
+            </ul>
+          </section>
+
+        </section>
+      </div>
+      
+    </section>
+  </body>
+</html>
