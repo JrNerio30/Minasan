@@ -1,0 +1,195 @@
+/* NAVIGATION MENU */
+nav a.logo{
+  font-family: "Imperial Script";
+  font-size: 50px;
+  color: var(--color_primary);
+  text-decoration: none;
+}
+
+nav aside a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+}
+
+nav aside a:nth-child(1){
+  margin-right: 1.5rem;
+}
+
+/* HERO SECTION */
+header{
+  overflow: hidden;
+}
+
+header h1{
+  margin-bottom: .3125rem;
+  color: var(--color_primary);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: clamp(3rem, 9vw, 9.375rem);
+  font-weight: 400;
+}
+
+header p{
+  font-size: clamp(1rem, 1.5vw, 2rem);
+  max-width: 50ch;
+  margin-bottom: 2rem;
+}
+
+header a{
+  padding: .5rem 2rem;
+  background-color: var(--color_primary);
+  text-decoration: none;
+  color: #EDEDED;
+  font-weight: 500;
+  border-radius: 1.25rem;
+}
+
+header figure img{
+  height: 250px;
+  max-width: 250px;
+  width: 100%;
+  border: 5px var(--color_primary) solid;
+  border-radius: 2.5rem;
+  object-fit: cover;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+header figure img:nth-child(1){
+  transform: translateX(4rem) translateY(2rem) rotate(-6deg);
+}
+
+header figure img:nth-child(2){
+  height: 318px;
+  max-width: 318px;
+  width: 100%;
+  z-index: 2;
+  transform:translateY(1rem);
+}
+
+header figure img:nth-child(3){
+  transform: translateX(-4rem) translateY(2rem) rotate(6deg);
+}
+
+/* MAIN SECTION */
+main p{
+  text-align: center;
+  max-width: 65ch;
+  margin: 1rem 1rem 2rem 1rem;
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+main button {
+  border: transparent;
+  background-color: var(--color_primary);
+  padding: .7rem 1.4rem;
+  border-radius: 1.25rem;
+  color: #EDEDED;
+  font-weight: 500;
+}
+
+/* RECIPE CARDS SECTION */
+
+section.recipes li::marker{
+  color: var(--color_primary);
+}
+
+section.recipes div.recipe-cards{
+  width: 100%;
+  max-width: 400px;
+  background-color: transparent;
+  border: .3125rem var(--color_primary) solid;
+}
+
+section.recipes div section{
+  padding: 1rem;
+}
+
+div.spaghetti_carbonara img{
+  width: 100%;
+}
+
+section.recipes div h3{
+  color: var(--color_primary);
+  font-size: 1.5625rem;
+  margin-bottom: .5rem;
+}
+
+section.recipes div p.description{
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+section.recipes div p{
+  margin-bottom: .2rem;
+}
+
+section.recipes span{
+  font-weight: 500;
+}
+
+section h4{
+  margin-bottom: .8rem;
+  font-size: 1.25rem;
+}
+
+section.recipe-time-wrapper{
+  margin-top: 1rem;
+  background-color: #f6d0ca;
+  padding: .5rem;
+  border-radius: .3125rem;
+}
+
+section.recipe-time-wrapper h4{
+  color: #902b1e;
+  margin-bottom: .8rem;
+}
+
+section.recipe-time-wrapper ul li{
+  margin-left: 2rem;
+  list-style: circle;
+}
+
+section.ingredients-wrapper,
+section.instructions-wrapper{
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: .0625rem black solid;
+}
+
+section.ingredients-wrapper ul li{
+  margin-left: 2rem;
+  padding: .2rem;
+}
+
+section.instructions-wrapper ul li{
+  padding-block: .2rem;
+  list-style: none;
+}
+
+section.instructions-wrapper span{
+  color: #902b1e;
+}
+
+section.nutrition-wrapper{
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+section.nutrition-wrapper ul li{
+  padding-block: .7rem;
+  list-style: none;
+  border-bottom: .0625rem black solid;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.nutrition-wrapper span{
+  color: #902b1e;
+}
+
+
+
+
+
+
+
