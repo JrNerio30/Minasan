@@ -3,6 +3,7 @@ const recipes = [[{
     "$oid": "1"
   },
   "name": "Spaghetti Carbonara",
+  "likes": 391,
   "description": "Classic Italian pasta dish with eggs, cheese, pancetta, and black pepper.",
   "cuisine": "Italian",
   "image": "./assets/Spaghetti_Carbonara.webp",
@@ -69,11 +70,13 @@ const recipes = [[{
     "$oid": "2"
   },
   "name": "Italian Sausage Spaghetti Squash",
+  "likes": 230,
   "description": "An easy, gluten free recipe for a hearty winter meal.",
   "cuisine": "Italian",
   "image": "./assets/Italian_Sausage_Spaghetti_Squash.webp",
   "prepTime": 20,
   "cookTime": 100,
+  "totalTime": 120, 
   "servings": 12,
   "difficulty": "medium",
   "ingredients": [
@@ -157,11 +160,13 @@ const recipes = [[{
       "$oid": "3"
     },
     "name": "Vegan Mushroom Ragout",
+    "likes": "221",
     "description": "A hearty winter meal featuring a mix of fresh and dried mushrooms, rosemary and thyme, and lots of garlic.",
     "cuisine": "French",
     "image": "./assets/Vegan_Mushroom_Ragu.webp",
     "prepTime": 10,
     "cookTime": 20,
+    "totalTime": 30,
     "servings": 6,
     "difficulty": "low",
     "ingredients": [
