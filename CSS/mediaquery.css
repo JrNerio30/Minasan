@@ -1,0 +1,18 @@
+@media screen and (min-width: 600px){
+  header{
+    margin: 0;
+    overflow: visible;
+  }
+
+  header figure img:nth-child(1){
+      animation: reveal-card1 linear both;
+      animation-timeline: view();
+      animation-range: 15vh 75vh;
+  }
+
+  header figure img:nth-child(3){
+      animation: reveal-card2 linear both;
+      animation-timeline: view();
+      animation-range: 15vh 75vh;
+  }
+}
