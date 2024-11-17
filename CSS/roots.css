@@ -1,5 +1,6 @@
 :root{
   --color_primary: #C75B4D;
+  --color_primary_darker: #902b1e;
 }
 
 @keyframes reveal-card1 {

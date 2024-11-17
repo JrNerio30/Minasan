@@ -1,17 +1,14 @@
 /* NAVIGATION MENU */
-nav a.logo{
+aside a.logo{
   font-family: "Imperial Script";
   font-size: 1.875rem;
   color: var(--color_primary);
   text-decoration: none;
 }
 
-nav aside{
-  position: relative;
-}
-
-nav aside a, 
-nav aside button{
+aside a, 
+aside button{
+  text-wrap: nowrap;
   text-decoration: none;
   color: black;
   font-size: .9375rem;
@@ -23,7 +20,8 @@ nav aside button{
   }
 }
 
-nav div.recipe-menus{
+aside nav{
+  position: relative;
   display: flex;
   flex-direction: column;
   min-width: 250px;
@@ -32,16 +30,16 @@ nav div.recipe-menus{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: .3125rem;
   position: absolute;
-  right: 1px;
-  top: 50px;
+  right: 3.125rem;
+  top: 3.125rem;
   transition: all 200ms;
 }
 
-nav div.recipe-menus.active{
+aside nav.recipe-menus.active{
   height: 150px;
 }
 
-nav div.recipe-menus a{
+aside nav a{
   font-weight: 600;
   text-wrap: nowrap;
   padding: 1rem;
@@ -50,20 +48,21 @@ nav div.recipe-menus a{
   display: none;
   &:hover{
     border-radius: .3125rem;
-    background-color: #902b1e;
+    background-color: var(--color_primary_darker);
+    color: white;
   }
 }
 
-nav div.recipe-menus a.active{
+aside nav a.active{
   display: block;
 }
 
 /* HERO SECTION */
-header{
+header.hero{
   overflow: hidden;
 }
 
-header h1{
+header.hero h1{
   margin-bottom: .3125rem;
   color: var(--color_primary);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -71,13 +70,13 @@ header h1{
   font-weight: 400;
 }
 
-header p{
+header.hero p{
   font-size: clamp(1rem, 1.5vw, 2rem);
   max-width: 50ch;
   margin-bottom: 2rem;
 }
 
-header a{
+header.hero a{
   padding: .5rem 2rem;
   background-color: var(--color_primary);
   text-decoration: none;
@@ -86,7 +85,7 @@ header a{
   border-radius: 1.25rem;
 }
 
-header figure img{
+header.hero figure img{
   height: 250px;
   max-width: 250px;
   width: 100%;
@@ -96,11 +95,11 @@ header figure img{
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-header figure img:nth-child(1){
+header.hero figure img:nth-child(1){
   transform: translateX(4rem) translateY(2rem) rotate(-6deg);
 }
 
-header figure img:nth-child(2){
+header.hero figure img:nth-child(2){
   height: 318px;
   max-width: 318px;
   width: 100%;
@@ -108,7 +107,7 @@ header figure img:nth-child(2){
   transform:translateY(1rem);
 }
 
-header figure img:nth-child(3){
+header.hero figure img:nth-child(3){
   transform: translateX(-4rem) translateY(2rem) rotate(6deg);
 }
 
@@ -137,45 +136,62 @@ section.recipes p.top3{
   font-size: clamp(1rem, 1.5vw, 2rem);
 }
 
-section.recipes li::marker{
-  color: var(--color_primary);
-}
 
-section.recipes div.recipe-cards{
+section.recipes article.recipe-cards{
   width: 100%;
   max-width: 400px;
   background-color: transparent;
   border: .3125rem var(--color_primary) solid;
 }
 
-div.name-likes-wrapper{
+article.recipe-cards section:not(.recipe-buttons-wrapper){
+  padding: 1rem;
+}
+
+header.name-likes-wrapper{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-div.name-likes-wrapper p{
+header.name-likes-wrapper p{
   font-weight: 600;
   text-wrap: nowrap;
 }
 
-section.recipes div section{
-  padding: 1rem;
+section.recipe-buttons-wrapper{
+  margin-bottom: 1rem;
 }
 
-div.recipe-cards img{
+section.recipe-buttons-wrapper button {
+  background-color: var(--color_primary);
+  border: transparent;
+  padding: .3rem 1rem;
+  margin: .5rem .6rem 0 0 ;
+  border-radius: .625rem;
+  color: white;
+  font-weight: 500;
+  font-size: .8125rem;
+  cursor: pointer;
+  transition: all 300ms;
+  &:hover{
+    background-color: var(--color_primary_darker);
+  }
+}
+
+article.recipe-cards img{
   width: 100%;
   height: 18.75rem;
   object-fit: cover;
 }
 
-section.recipes div h3{
+section.recipes h3{
   color: var(--color_primary);
   font-size: 1.5625rem;
   margin-bottom: .5rem;
 }
 
-section.recipes div p.description{
+section.recipes p.description{
   margin-bottom: 1rem;
   font-weight: 500;
 }
@@ -201,7 +217,7 @@ section.recipe-time-wrapper{
 }
 
 section.recipe-time-wrapper h4{
-  color: #902b1e;
+  color: var(--color_primary_darker);
   margin-bottom: .8rem;
 }
 
@@ -228,15 +244,15 @@ section.instructions-wrapper ul li{
 }
 
 section.instructions-wrapper span{
-  color: #902b1e;
+  color: var(--color_primary_darker);
 }
 
-section.nutrition-wrapper{
+footer.nutrition-wrapper{
   margin-top: 1rem;
   padding-bottom: 1rem;
 }
 
-section.nutrition-wrapper ul li{
+footer.nutrition-wrapper ul li{
   padding-block: .7rem;
   list-style: none;
   border-bottom: .0625rem black solid;
@@ -244,13 +260,13 @@ section.nutrition-wrapper ul li{
   justify-content: space-between;
 }
 
-section.nutrition-wrapper span{
-  color: #902b1e;
+footer.nutrition-wrapper span{
+  color: var(--color_primary_darker);
 }
 
 p.tags{
   text-transform: capitalize;
-  color: #902b1e;
+  color: var(--color_primary_darker);
 }
 
 p.tags span{

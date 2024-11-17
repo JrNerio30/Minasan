@@ -25,7 +25,14 @@ p, button, a{
   font-family: "EB Garamond";
 }
 
-nav{
+.reset{
+  color: var(--color_primary_darker);
+  font-size: .8125rem;
+  cursor: pointer;
+}
+
+/* NAVIGATION MENU */
+aside{
   position: fixed;
   width: 100%;
   height: 8vh;
@@ -37,7 +44,8 @@ nav{
   z-index: 3;
 }
 
-header{
+/* HERO SECTION */
+header.hero{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,7 +55,8 @@ header{
   margin-bottom: 7rem;
 }
 
-header section{
+/* HERO SECTION GROUP */
+header.hero section{
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -55,13 +64,15 @@ header section{
   margin: 1rem;
 }
 
-header figure{
+/* HERO FIGURE GROUP */
+header.hero figure{
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
 
+/* MAIN SECTION */
 main{
   min-height: 60vh;
   display: flex;
@@ -71,6 +82,7 @@ main{
   margin-bottom: 7rem;
 }
 
+/* RECIPES SECTION */
 section.recipes{
   min-height: 90vh;
   display: flex;
@@ -79,7 +91,8 @@ section.recipes{
   flex-direction: column;
 }
 
-section.recipes div.recipe-cards{
+/* RECIPE CARDS */
+article.recipe-cards{
   display: flex;
   flex-direction: column;
   margin-bottom: 5rem;
