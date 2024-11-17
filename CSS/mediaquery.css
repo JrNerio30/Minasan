@@ -1,5 +1,5 @@
 @media screen and (min-width: 600px){
-  header{
+  header.hero{
     margin: 0;
     overflow: visible;
   }
